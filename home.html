@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/painting.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Vryheid Galleries-Artwork Rental</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="home.html" class="nav-logo">
+                <i class="ri-quill-pen-fill nav-logo-icon"></i> Vryheid Galleries
+            </a>
+
+            <div class="menu-btn" id="nav-menu">
+                <ul class="nav-bar">
+                    <li class="nav-btn">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="artworks.html" class="nav-link">Collection</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="close-btn" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <div class="toggle-btn" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg">
+        <main class="main">
+            <section class="home" id="home">
+                <div class="homecontainer container grid">
+                    <img src="img/home.png" alt="" class="home-pic">
+
+                    <div class="artbetter">
+                        <h1 class="title">
+                            Art will make <br> your life better
+                        </h1>
+                        <p class="description">
+                            Rent incredible art for your offices or home.
+                            We want you to live with art.
+                        </p>
+                        <img src="img/playicon.png" id="icon">
+                        <audio id="song">
+                            <source src="sound/song.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+
+                    <div class="social">
+                        <span class="social-follow">Follow Us</span>
+
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product section container" id="trending">
+                <h2 class="section-title-center">
+                    Trending <br> Artworks
+                </h2>
+
+                <p class="prod-description">
+                    Here are some selected artworks from our showroom. Rent and enjoy their beauty.
+                </p>
+
+                <div class="prod-container grid">
+                    <article class="prod-card">
+                        <a href="product.html?product=product1"> <img src="img/product1.png" alt=""
+                                class="product__img"> </a>
+                    </article>
+
+                    <article class="prod-card">
+                        <a href="product.html?product=product2"> <img src="img/product2.png" alt=""
+                                class="product__img"> </a>
+                    </article>
+
+                    <article class="prod-card">
+                        <a href="product.html?product=product3"> <img src="img/product3.png" alt=""
+                                class="product__img"> </a>
+                    </article>
+                </div>
+                <a href="artworks.html" class="view-link">View all</a>
+
+            </section>
+
+            <section class="contact section container" id="contact">
+                <div class="contact-container grid">
+                    <div class="contact-box">
+                        <h2 class="section-title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact-data">
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Call us for instant support</h3>
+                                <span class="contact-description">
+                                    <i class="ri-phone-line contact-icon"></i>
+                                    +123 456 7890
+                                </span>
+                            </div>
+
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Write us by mail</h3>
+                                <span class="contact-description">
+                                    <i class="ri-mail-line contact-icon"></i>
+                                    user@email.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact-form">
+                        <div class="contact-inputs">
+                            <div class="contact-content">
+                                <input type="email" placeholder=" " class="input">
+                                <label for="" class="contact-label">Email</label>
+                            </div>
+
+                            <div class="contact-content">
+                                <input type="text" placeholder=" " class="input">
+                                <label for="" class="contact-label">Subject</label>
+                            </div>
+
+                            <div class="contact-content contact-area">
+                                <textarea name="message" placeholder=" " class="input"></textarea>
+                                <label for="" class="contact-label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer section">
+            <div class="footer-container container grid">
+                <div class="footer-content">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <table class="footer-information">
+                        <tr>
+                            <td>Amarjit Singh</td>
+                            <td>Mohak Mankani</td>
+                            <td>Kevin Ren</td>
+                            <td>Daniel Davidov</td>
+                        </tr>
+                    </table>
+
+                    <ul class="footer-data">
+                        <li class="footer-information">+123 456 7890</li>
+
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/" class="footer-social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer-social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer-social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer-cards">
+                        <table cellspacing="4px" cellpadding="0">
+                            <tr>
+                                <th class="card1"><img src="img/card1.png" alt="" class="footer-card"></td>
+                                <th class="card2"><img src="img/card2.png" alt="" class="footer-card"></td>
+                                <th class="card3"><img src="img/card3.png" alt="" class="footer-card"></td>
+                                <th class="card4"><img src="img/card4.png" alt="" class="footer-card"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="loading-text">0%</div>
+    <script src="scrollreveal.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            if (song.paused) {
+                song.play();
+                icon.src = "img/pauseicon.png";
+            } else {
+                song.pause();
+                icon.src = "img/playicon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
