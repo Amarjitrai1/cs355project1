@@ -85,7 +85,7 @@ srev.reveal(`.contact-form`, { origin: 'right' })
 srev.reveal(`.prod-card, , .footer`, { interval: 100 })
 
 /*----------- BLURRY LOADING -----------*/
-if (window.location.pathname.indexOf("home") != -1) {
+if (document.querySelector('.bg') != undefined ) {
   const loadingText = document.querySelector('.loading-text');
   const bg = document.querySelector('.bg');
   const header = document.querySelector('#header');
