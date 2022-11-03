@@ -85,25 +85,27 @@ srev.reveal(`.contact-form`, { origin: 'right' })
 srev.reveal(`.prod-card, , .footer`, { interval: 100 })
 
 /*----------- BLURRY LOADING -----------*/
-const loadingText = document.querySelector('.loading-text');
-const bg = document.querySelector('.bg');
-const header = document.querySelector('#header');
+if (window.location.pathname.indexOf("home") != -1) {
+  const loadingText = document.querySelector('.loading-text');
+  const bg = document.querySelector('.bg');
+  const header = document.querySelector('#header');
 
 
-var load = 0;
-var int = setInterval(blurring, 30)
-function blurring() {
-  load++;
-  if (load > 99) {
-    clearInterval(int);
+  var load = 0;
+  var int = setInterval(blurring, 30)
+  function blurring() {
+    load++;
+    if (load > 99) {
+      clearInterval(int);
+    }
+
+    loadingText.innerHTML = `${load}%`;
+    loadingText.style.opacity = scale(load, 0, 100, 1, 0);
+    bg.style.filter = `blur(${scale(load, 0, 100, 20, 0)}px)`
+    header.style.filter = `blur(${scale(load, 0, 100, 20, 0)}px)`
   }
 
-  loadingText.innerHTML = `${load}%`;
-  loadingText.style.opacity = scale(load, 0, 100, 1, 0);
-  bg.style.filter = `blur(${scale(load, 0, 100, 20, 0)}px)`
-  header.style.filter = `blur(${scale(load, 0, 100, 20, 0)}px)`
-}
-
-const scale = (num, in_min, in_max, out_min, out_max) => {
-  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+  const scale = (num, in_min, in_max, out_min, out_max) => {
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+  }
 }
